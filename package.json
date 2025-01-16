@@ -6,13 +6,21 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "ts-node src/scripts/loadDB.ts"
   },
   "dependencies": {
+    "@datastax/astra-db-ts": "^1.5.0",
+    "@langchain/community": "^0.3.24",
+    "@langchain/core": "^0.3.30",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.11",
     "lucide-react": "^0.471.1",
     "next": "15.1.4",
+    "openai": "^4.78.1",
+    "puppeteer": "^24.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0",
@@ -27,6 +35,7 @@
     "eslint-config-next": "15.1.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
